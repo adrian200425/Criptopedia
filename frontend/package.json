@@ -1,0 +1,17 @@
+{
+  "name": "criptopedia-frontend",
+  "version": "1.0.0",
+  "description": "Frontend para Criptopedia Universal - Enciclopedia de Criptografía con IA YouTube",
+  "scripts": {
+    "build": "echo 'No build step needed for static site'"
+  },
+  "keywords": [
+    "criptografia",
+    "educacion",
+    "ia",
+    "youtube-api",
+    "fastapi"
+  ],
+  "author": "Jesus GH",
+  "license": "MIT"
+}
