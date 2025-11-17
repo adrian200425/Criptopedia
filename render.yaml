@@ -1,8 +1,9 @@
 services:
-  # Backend API (FastAPI)
+  # Backend API (FastAPI) - FREE TIER
   - type: web
     name: criptopedia-backend
     env: python
+    plan: free
     buildCommand: pip install -r backend/requirements.txt
     startCommand: cd backend && python main.py
     envVars:
@@ -11,9 +12,10 @@ services:
       - key: FRONTEND_URL
         value: https://criptopedia-frontend.onrender.com
 
-  # Frontend Static Site (CORREGIDO)
+  # Frontend Static Site - FREE (siempre gratuito)
   - type: web
     name: criptopedia-frontend
     env: static
-    buildCommand: ""  # Vacío - no necesita build
+    plan: free
+    buildCommand: ""
     staticPublishPath: ./frontend
