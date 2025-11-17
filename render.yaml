@@ -1,5 +1,5 @@
 services:
-  # Backend API
+  # Backend API (FastAPI)
   - type: web
     name: criptopedia-backend
     env: python
@@ -11,7 +11,9 @@ services:
       - key: FRONTEND_URL
         value: https://criptopedia-frontend.onrender.com
 
-  # Frontend Static Site
-  - type: static
+  # Frontend Static Site (CORREGIDO)
+  - type: web
     name: criptopedia-frontend
-    staticPublishPath: frontend
+    env: static
+    buildCommand: ""  # Vacío - no necesita build
+    staticPublishPath: ./frontend
